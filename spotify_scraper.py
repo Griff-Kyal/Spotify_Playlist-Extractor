@@ -103,11 +103,6 @@ def scroll_and_load_all_tracks(page):
                 print("Used PageDown key")
                 scrolled = True
             
-            if not scrolled:
-                page.mouse.wheel(0, 400)
-                print("Used mouse wheel")
-                scrolled = True
-            
             page.wait_for_timeout(1500)
             
         except Exception as e:
